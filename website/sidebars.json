@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "Hogyan kezdjem?": ["install-environment", "install-project", "docker"],
+    "Jó ha tudod":  ["git"],
+    "Körök és profilok": ["groups", "profiles", "memberships"],
+    "SVIE tagság": ["svie"],
+    "Közösségi pontozás": ["workflow-of-evaulation", "principles"],
+    "Értesítési rendszer": ["notifications"],
+    "API": ["authsch"]
+  }
+}
