@@ -5,7 +5,7 @@ sidebar_label: Pontozás menete
 ---
 # Áttekintés 
 
-A pontozás tekintetében három időszakra osztjuk a félévet. Ezek optimális esetben az alábbi sorrendben követik egymást, de a rendszer tudja kezelni, ha a sorrend felcserélődik. Amikor az időszakot átállítják a következő félév nyugalmi időszakára, akkor automatikusan kiszámoljuk a PointHistoy-t a felhasználóknak.
+A pontozás tekintetében három időszakra osztjuk a félévet. Ezek optimális esetben megadott sorrendben (nyugalmi, pontozási, bírálási időszak) követik egymást, de a rendszer tudja kezelni, ha a sorrend felcserélődik. Amikor az időszakot átállítják a következő félév nyugalmi időszakára, akkor automatikusan kiszámoljuk a PointHistoy-t a felhasználóknak.
 
 
 ## Implementációs részletek
@@ -28,7 +28,9 @@ A körvezetőnek van lehetősége a pontozást és belépőigényeket, egymást�
 
 ### Módosítható pontozások
 
-Bírálási időben csak az elutasított pontozások módosíthatók. Pontozási időszakban az elfogadott értékeléseken kívül bármelyik értékelés módosítható, ha nincs leadva. A leadott értékeléseket vissza kell vonni, hogy lehessen őket szerkeszteni.
+Bírálási időben csak az elutasított pontozások módosíthatók. Ebből követekzik, hogy a leadott pontozások nem visszavonhatók, tehát csak akkor lehet őket újra módosítani, ha elutasításra kerültek.
+
+Pontozási időszakban az elfogadott értékeléseken kívül bármelyik értékelés módosítható, ha nincs leadva. A leadott értékeléseket vissza kell vonni, hogy lehessen őket szerkeszteni.
 
 ## Jogosultsági szintek
 
